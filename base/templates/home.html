@@ -5,10 +5,12 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description"
+        content="Portfolio of Sahil Gupta, Software Engineer specializing in Java, Python, and various frameworks.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
 <body>
@@ -37,7 +39,7 @@
                 <h6 class="popinss">Hi, I'm</h6>
                 <h1 class="t-white">Sahil Gupta</h1>
                 <h4 class="popinss">Software Engineer</h4>
-                <a href="{%static 'pdf/Sahil_s_Resume.pdf'%}" target="_blank">
+                <a href="{% static 'pdf/Sahil_s_Resume.pdf' %}" target="_blank">
                     <button class="btn popinss bg-success">Download Resume</button>
                 </a>
                 <a class="btn live popinss" id="hireme" href="http://linkedin.com/in/sahil-gupta-253bb0187/"
