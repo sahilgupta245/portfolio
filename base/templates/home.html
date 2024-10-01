@@ -1,0 +1,258 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+</head>
+
+<body>
+    <!-- navbar section -->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">Portfolio</h2>
+        </div>
+        <div class="right-nav">
+            <ul>
+                <li><a href="#home" class="t-white roboto"><i class="fa-solid fa-home"></i> Home</a></li>
+                <li><a href="#about" class="t-white roboto"><i class="fa-solid fa-user"></i> About Me</a></li>
+                <li><a href="#skills" class="t-white roboto"><i class="fa-solid fa-code"></i> Skills</a></li>
+                <li><a href="#projects" class="t-white roboto"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+                </li>
+                <li><a href="#contact" class="contact t-white roboto"><i class="fa-solid fa-rocket"></i> Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- home section -->
+    <section id="home" class="full-screen-section flex s-round sw-80 m-auto">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+                <h6 class="popinss">Hi, I'm</h6>
+                <h1 class="t-white">Sahil Gupta</h1>
+                <h4 class="popinss">Software Engineer</h4>
+                <a href="{%static 'pdf/Sahil_s_Resume.pdf'%}" target="_blank">
+                    <button class="btn popinss bg-success">Download Resume</button>
+                </a>
+                <a class="btn live popinss" id="hireme" href="http://linkedin.com/in/sahil-gupta-253bb0187/"
+                    target="_blank">Let's Talk</a>
+            </div>
+        </div>
+
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center items-center" id="mainImage">
+                <img src="{%static 'images/home_image.png'%}" alt="Sahil Avatar Image">
+            </div>
+        </div>
+    </section>
+    <a href="#home"><i id="up" class="fa-solid fa-arrow-up"></i></a>
+    <hr class="t-white">
+
+    <!-- about section -->
+    <section id="about" class="full-screen-section">
+        <h1 class="heading t-center my-2 t-white f-2">About Me</h1>
+        <div class="about-container flex s-around">
+            <div class="about-left flex s-center items-center">
+                <img src="{% static 'images/professional.png' %}" alt="A Boy is wearing VR Glasses">
+            </div>
+            <div class="about-right flex">
+                <div class="about-content">
+                    <h1 class="t-white m-b-1 popinss">Sahil Gupta</h1>
+                    <p class="t-white popinss">
+                        My name is Sahil Gupta, and I am currently based in Delhi. I've always been interested in
+                        technology. That's why I have
+                        completed my Master's in Computer Applications (MCA) from Galgotias College of Engineering and
+                        Technology, following a
+                        Bachelor of Computer Applications (BCA) from Singhania University. Throughout my academic
+                        journey, I have consistently
+                        demonstrated a deep passion for technology, particularly in Python and Java development, which
+                        are my primary areas of
+                        expertise.
+                    </p>
+                    <p class="t-white popinss">
+                        In addition to my formal education, I have 2 years of hands-on experience working as a Software
+                        Trainer and Data Entry
+                        Executive at Gagan Pathology Centre, where I honed my non-technical and leadership skills.
+                        During my tenure, I trained
+                        junior employees and significantly improved operational efficiency.
+                    </p>
+                    <p class="t-white popinss">
+                        My enthusiasm for technology extends beyond the classroom and workplace. I have actively
+                        participated in hackathons
+                        during my Master's program, where I tackled real-world problems and collaborated with
+                        like-minded individuals to
+                        innovate and create impactful solutions.
+                    </p>
+                    <p class="t-white popinss">
+                        My skill set includes proficiency in Java, Python, C/C++, and MySQL, and experience with
+                        frameworks such as Spring and
+                        Bootstrap. My recent projects, are ImagiXpert, where I developed tools using Python and OpenCV,
+                        and NexGen HR, a Spring
+                        MVC-based Employee management system, I built a register and login system and CRUD operation.
+                    </p>
+                    <a class="btn" id="hireme-btn" href="http://linkedin.com/in/sahil-gupta-253bb0187/">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="t-white">
+
+    <!-- skills section -->
+    <section id="skills">
+        <h1 class="heading t-center my-2 t-white f-2">Skills</h1>
+        <div class="skills-container flex s-around">
+            <div class="skills-left">
+                <img src="{% static 'images/project_image.jpg' %}" alt="Skills Image">
+            </div>
+            <div class="skills-right">
+                <div class="bar python">
+                    <span class="bar-content left">Python</span>
+                    <span class="bar-content right-skills">8/10</span>
+                </div>
+                <div class="bar django">
+                    <span class="bar-content left">Django Framework</span>
+                    <span class="bar-content right-skills">7/10</span>
+                </div>
+                <div class="bar java">
+                    <span class="bar-content left">Core Java</span>
+                    <span class="bar-content right-skills">7/10</span>
+                </div>
+                <div class="bar spring">
+                    <span class="bar-content left">Spring Framework</span>
+                    <span class="bar-content right-skills">7/10</span>
+                </div>
+                <div class="bar html-css">
+                    <span class="bar-content left">HTML & CSS</span>
+                    <span class="bar-content right-skills">8/10</span>
+                </div>
+                <div class="bar bootstrap">
+                    <span class="bar-content left">Bootstrap</span>
+                    <span class="bar-content right-skills">8/10</span>
+                </div>
+                <div class="bar mysql">
+                    <span class="bar-content left">MySQL</span>
+                    <span class="bar-content right-skills">8/10</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="t-white">
+
+    <!-- project section -->
+    <section id="projects">
+        <h1 class=" heading t-center my-2 t-white f-2">Projects</h1>
+        <div class="projects-container flex s-around">
+            <div class="projects-item flex f-col s-center items-center">
+                <img class="projects-img" src="{% static 'images/nextgen_hr.jpg' %}" alt="Skills Image">
+                <h1 class="t-white popinss">NexGen HR
+                    <p class="t-white">Java | Spring MVC | Hibernate ORM | MySQL | Bootstrap</p>
+                </h1>
+                <p class="t-white">
+                    Developed user authentication with login and registration features with 100% security.
+                    Implemented CRUD operations for managing data of 200+ employees.
+                    Designed a Flexible display of employee data on the home page.
+                    Utilized JSTL for server-side rendering and Jakarta Servlet API, reducing page load times by 25%.
+                    Delivered a streamlined platform, enhancing organizational productivity.
+                    Focused on user experience and project management to achieve successful outcomes.
+                </p>
+                <div class="button flex s-around">
+                    <a class="btn mx-1 m-top" href="https://github.com/sahilgupta245" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col s-center items-center">
+                <img class="projects-img" src="{% static 'images/imagixpert.jpg' %}" alt="Skills Image">
+                <h1 class="t-white popinss">ImagiXpert
+                    <p class="t-white">Python | OpenCV | Tkinter | QR code libraries | NLTK</p>
+                </h1>
+                <p class="t-white">
+                    Engineered tools to extract text from over 300 images into searchable formats.
+                    Transformed 100+ photos into sketches with a single click, facilitating visual analysis.
+                    Demonstrated programming proficiency by creating innovative solutions.
+                    Created handwritten notes from typed text for 50+ presentations and projects.
+                    Built hand gesture controls for computer operations, improving interaction by 20%.
+                    Implemented QR code decoding for instant information access.
+                </p>
+                <div class="button flex s-around">
+                    <a class="btn mx-1 m-top" href="https://github.com/sahilgupta245" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="t-white">
+
+    <!-- contact me section -->
+    <section id="contact" class="m-b-1">
+        <h1 class="heading t-center my-2 t-white f-2">Contact Me</h1>
+        <div class="contact-container flex s-around items-center">
+            <div class="form" id="contactform">
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="name form-div">
+                        <input type="text" name="name" id="name" class="popinss" placeholder="Enter your Full Name"
+                            required>
+                    </div>
+                    <div class="email form-div">
+                        <input type="email" name="email" id="email" class="popinss" placeholder="Enter your Email"
+                            required>
+                    </div>
+                    <div class="phone form-div">
+                        <input type="phone" name="number" id="number" class="popinss"
+                            placeholder="Enter your Phone Number" required>
+                    </div>
+                    <div class="textarea form-div">
+                        <textarea name="content" id="textarea" cols="30" rows="10" class="popinss"
+                            placeholder="Any Message for us..."></textarea>
+                    </div>
+                    <button type="submit" class="btn popinss" id="sumbit">Send</button>
+                    <button type="reset" class="btn popinss" id="reset">Reset</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <hr class="t-white">
+
+    <!-- footer section -->
+    <footer id="footer">
+        <ul id="links" class="flex w-80 m-auto my-2 res">
+            <li><a href="#home" class="popinss">Home</a></li>
+            <li><a href="#about" class="popinss">About</a></li>
+            <li><a href="#skills" class="popinss">Skills</a></li>
+            <li><a href="#projects" class="popinss">Projects</a></li>
+            <li><a href="#home" class="portfolio">Portfolio</a></li>
+        </ul>
+        <ul id="glow" class="w-80 flex">
+            <li>
+                <a href="http://linkedin.com/in/sahil-gupta-253bb0187/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/sahilgupta245" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/sahil_gupta_officials_/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+            </li>
+            <li>
+                <a href="https://www.discord.com/sahilgupta245/" target="_blank">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+            </li>
+        </ul>
+        <p class="t-center my-2 popinss">&copy; All Right Reserved -
+            <span class="cpy-white popinss">Sahil Gupta Tech</span>
+        </p>
+    </footer>
+</body>
+
+</html>
